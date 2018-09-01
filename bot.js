@@ -4,7 +4,11 @@ const client = new Discord.Client();
 
 
 // Set the prefix
-let prefix = "!";
+let prefix = "m!";
+
+bot.on('ready', () => {
+  bot.user.setGame('m!help')
+  }
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -14,6 +18,7 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "foo")) {
     message.channel.send("bar!");
   }
+  
 });
 
 client.login("NDc5Nzg4Njc1OTMzMTQzMDQx.Dmx6mg.MtxyMLW6_wPlYJG0e9qeWyX6mZg");
