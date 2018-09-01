@@ -17,4 +17,5 @@ client.on("message", (message) => {
   
 });
 
+client.user.setActivity("WORK IN PROGRESS"); 
 client.login("NDc5Nzg4Njc1OTMzMTQzMDQx.Dmx6mg.MtxyMLW6_wPlYJG0e9qeWyX6mZg");
