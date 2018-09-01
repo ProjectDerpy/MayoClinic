@@ -5,10 +5,6 @@ const client = new Discord.Client();
 
 // Set the prefix
 let prefix = "m!";
-
-bot.on('ready', () => {
-  bot.user.setGame('m!help')
-  }
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
