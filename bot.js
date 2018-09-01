@@ -23,7 +23,7 @@ client.on("message", (message) => {
   config.prefix = newPrefix;
 
   // Now we have to save the file.
-  fs.writeFile("./config.json", JSON.stringify(config), (err) => console.error);
+  fs.writeFile("config.json", JSON.stringify(config), (err) => console.error);
 }
 });
 
